@@ -9,7 +9,7 @@ export function PublicPageLayout() {
     <div className={classes.wrapper}>
       <div className={classes.bg}>
         <img
-          src={CONTEXT_PATH + '/static/images/logo-formerly-dark-bg.webp'}
+          src={CONTEXT_PATH + '/static/images/logo_light.png'}
           alt="logo"
           style={{ alignSelf: 'flex-start', maxWidth: 150, marginTop: 5, marginLeft: 5 }}
         />
@@ -25,7 +25,7 @@ export function PublicPageLayout() {
             },
           }}
         >
-          <img
+          {/* <img
             src={CONTEXT_PATH + '/static/images/notifications/notification_01.webp'}
             alt="logo"
             style={{ maxWidth: 400 }}
@@ -39,7 +39,7 @@ export function PublicPageLayout() {
             src={CONTEXT_PATH + '/static/images/notifications/notification_03.webp'}
             alt="logo"
             style={{ marginTop: -15, maxWidth: 400 }}
-          />
+          /> */}
         </Box>{' '}
       </div>
       <Outlet />

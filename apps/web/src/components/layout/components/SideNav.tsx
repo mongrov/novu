@@ -40,6 +40,7 @@ import { ChangesCountBadge } from './ChangesCountBadge';
 import OrganizationSelect from '../../nav/OrganizationSelect/OrganizationSelect';
 import { VisibilityOff } from './VisibilityOff';
 import { IS_DOCKER_HOSTED } from '../../../config';
+import { CONTEXT_PATH } from '../../../config';
 
 const usePopoverStyles = createStyles(({ colorScheme }) => ({
   dropdown: {
@@ -191,7 +192,12 @@ export function SideNav({}: Props) {
     >
       <Navbar.Section sx={{ marginBottom: '24px', padding: '0 24px' }}>
         <Link to="/">
-          <NovuLogo />
+          <img
+            src={CONTEXT_PATH + '/static/images/logo_light.png'}
+            alt="logo"
+            style={{ alignSelf: 'flex-start', maxWidth: 150, marginTop: 5, marginLeft: 5 }}
+          />
+          {/* <NovuLogo /> */}
         </Link>
       </Navbar.Section>
       <Navbar.Section sx={{ overflowY: 'auto', flex: 1, padding: '0 24px' }}>
